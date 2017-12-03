@@ -1,0 +1,120 @@
+html {
+  background-color: #011627;
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  background-color: #011627 !important;
+}
+
+
+#header{
+  text-align: center;
+  /*border: red solid 2px;*/
+  margin: 50px ;
+}
+
+#header h1 , #header h3{
+  margin-top: 50px;
+  font-size: 50px;
+  /*border: red solid 2px;*/
+  font-family: 'Roboto', sans-serif !important;
+  color: white;
+}
+
+#logo{
+  /*border: blue 2px solid;*/
+  width: 25%;
+}
+
+.btn-secondary {
+  background-color: #2EC4B6 !important;
+  color: #011627 !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: bold;
+  font-size: 35px !important;
+  margin-top: 20px;
+  border: transparent;
+  padding: 20px !important;
+}
+
+.btn-secondary:active {
+  background-color: #1f867c !important;
+  border: transparent !important;
+  box-shadow: none !important;
+}
+
+.btn-secondary:not([disabled]):not(.disabled).active, .btn-secondary:not([disabled]):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+  background-color: #1f867c !important;
+}
+
+
+
+
+
+#inputs{
+  width: 75%;
+  margin: auto;
+}
+
+#inputs label {
+  color: white;
+  font-size: 50px;
+}
+
+#inputs input {
+  font-size: 50px;
+  margin: 30px auto;
+  border-radius: 40px;
+  padding: auto 20px;
+}
+
+
+
+
+#Crear {
+  font-size: 60px;
+  margin:  60px auto 5px auto;
+  width: 75%;
+  background-color: #E71D36;
+  border: none;
+  border-radius: 50px;
+}
+
+#Crear:active{
+  background-color: #a61224;
+}
+
+
+span {
+  color: #E71D36 !important;
+}
+
+#creators{
+  text-align: center;
+  font-size: 30px;
+}
+
+
+#linkOculto {
+  color: rgba(0,0,0,0);
+  background-color: transparent;
+  border: none;
+  pointer-events: none;
+  width:1px;
+}
+
+
+#Opciones{
+  margin: auto 90px ;
+}
+
+#Opciones button{
+  font-size: 60px !important;
+  margin-top: 40px;
+  border-radius: 20px;
+  background-color: white;
+  color: #011627;
+  font-weight: bold;
+}
