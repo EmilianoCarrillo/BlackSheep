@@ -2,8 +2,11 @@
 var posVerdad;
 
 function mostrarResultados(){
-  // document.getElementById("#o" + posVerdad).style.backgroundColor='#2EC4B6';
-  alert("HOLA");
+  for (var i = 1; i <= parseInt($("#mt").val())+1; i++) {
+    $("#o" + i).css("background-color", "#E71D36");
+    $("#o" + i).css("color", "white");
+  }
+  $("#o" + posVerdad).css("background-color", "#2EC4B6");
 }
 
 

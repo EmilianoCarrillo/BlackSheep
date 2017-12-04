@@ -22,5 +22,5 @@ function copyToClipboard(){
   var copyText = document.getElementById("linkOculto");
   copyText.select();
   document.execCommand("Copy");
-  alert("¡Texto copiado!\nComparte tu link.");
+  alert("¡Link copiado en el portapapeles!\nAhora pega el link en cualquiera de tus redes sociales. 👥");
 }

@@ -9,23 +9,29 @@ body{
 }
 
 
-#header{
+.header{
   text-align: center;
   /*border: red solid 2px;*/
-  margin: 50px ;
+  margin: 50px 50px auto  50px;
 }
 
-#header h1 , #header h3{
+.header h1 , .header h3{
   margin-top: 50px;
   font-size: 50px;
   /*border: red solid 2px;*/
   font-family: 'Roboto', sans-serif !important;
   color: white;
 }
-
+.header  h3 {
+  margin-bottom: 50px;
+}
 #logo{
   /*border: blue 2px solid;*/
-  width: 25%;
+  width: 45%;
+}
+
+#logoSmall {
+  width: 30%;
 }
 
 .btn-secondary {
@@ -73,11 +79,37 @@ body{
 
 
 
-#Crear {
+#Crear{
   font-size: 60px;
-  margin:  60px auto 5px auto;
+  margin:  20px auto 5px auto;
   width: 75%;
-  background-color: #E71D36;
+  background-color: #fffc00;
+  font-weight: bold;
+  color: black;
+  border: none;
+  border-radius: 50px;
+}
+
+#socialButtons{
+  width: 75%;
+  margin:   40px auto 40px auto;
+  text-align: center;
+}
+#Facebook {
+  font-size: 60px;
+  margin-right: auto;
+  width: 48%;
+  background-color:#3B5998;
+  border: none;
+  border-radius: 50px;
+  float: left;
+}
+
+#Twitter {
+  font-size: 60px;
+  margin-left: auto;
+  width: 48%;
+  background-color: #55acee;
   border: none;
   border-radius: 50px;
 }
@@ -114,7 +146,60 @@ span {
   font-size: 60px !important;
   margin-top: 40px;
   border-radius: 20px;
-  background-color: white;
   color: #011627;
   font-weight: bold;
+}
+
+#o1, #o2, #o3, #o4{
+  background-color: white;
+}
+
+#return {
+  color: white !important;
+  margin: 40px 85px !important;
+  text-align: center !important;
+}
+
+.aTag {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+.aTag:active {
+  color: grey;
+}
+
+#mobileOnly {
+  z-index: 1000;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  position: fixed; top: 0; left: 0;
+  visibility: hidden;
+  background-color: #011627 !important;
+
+}
+
+.header2{
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  padding: auto;
+}
+
+#logo2{
+  width: 500px;
+   height: 500px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   margin-left: -250px;
+   margin-top: -250px;
+}
+
+@media screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1600px){
+  #mobileOnly {
+    visibility: visible;
+  }
 }

@@ -3,22 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>Black Sheep</title>
+    <meta name="description" content="¿Me conoces bien? ¿Cuál de estos enunciados sobre mi es verdadereo? Te reto a votar por uno. ⚫️🐑😉">
     <link rel="stylesheet" href="./stylesheets/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="shortcut icon" href="./logo.ico" />
   </head>
   <body>
 
+  <div id="mobileOnly">
+    <div class="header2">
+      <div id="logo2">
+        <a href="http://blacksheep.citaland.com"><img  src="./images/logo.png" alt="Logo"></a>
+        <h1><br>Por favor, abre este sitio desde tu móvil.<br/>⚫️🐑😉📱</h1>
+      </div>
+    </div>
+  </div>
   <div id="container">
-    <div id="header">
-      <img id="logo" src="./images/logo.png" alt="Logo">
-      <h1>¿How many statements would you like to input?</h1>
+    <div class="header">
+      <a href="http://blacksheep.citaland.com"><img id="logo" src="./images/logo.png" alt="Logo"></a>
+      <h1>¿Cuántos enunciados deseas poner?</h1>
       <div class="btn-group" data-toggle="buttons">
         <label class="btn btn-secondary active" onclick="mentiras(2)">
-          <input  type="radio" name="options" id="option1" autocomplete="off" checked> 2 lies, 1 truth.
+          <input  type="radio" name="options" id="option1" autocomplete="off" checked> 2 mentiras, 1 verdad.
         </label>
         <label  class="btn btn-lg btn-secondary"  onclick="mentiras(3)">
-          <input  type="radio" name="options" id="option2" autocomplete="off"> 3 lies, 1 truth.
+          <input  type="radio" name="options" id="option2" autocomplete="off"> 3 mentiras, 1 verdad.
         </label>
       </div>
     </div>
@@ -26,9 +36,9 @@
     <form class="form-group" action="linkgenerator.php" method="POST">
       <input id="mentiras" type="hidden" value="2" name="mentiras"/>
       <div id="inputs" >
-        <label for="usr">Truth:</label>
+        <label for="usr">Verdad:</label>
         <input type="text" class="form-control" id="R1" name="R1" required/>
-        <label for="usr">False:</label>
+        <label for="usr">Mentiras:</label>
         <input type="text" class="form-control" id="R2" name="R2" required/>
         <input type="text" class="form-control" id="R3" name="R3" required/>
       </div>
@@ -47,7 +57,7 @@
 
     </script>
 
-    <p id="creators" class="text-muted">Coded with <span>♥</span> by <a target="_blank" class="mail">Emiliano, Omar & Genis.</a></p>
+    <p id="creators" class="text-muted">Programada con <span>♥</span> por <a target="_blank" class="mail">Emiliano, Omar & Genis.</a></p>
 
   </body
 
