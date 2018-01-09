@@ -25,7 +25,6 @@
     $sql="select * from blacktable where Id=".$id_;
     $result=mysqli_query($connect,$sql);
     $fila=mysqli_fetch_assoc($result);
-
   ?>
   <div id="container">
     <div class="header">
@@ -44,11 +43,11 @@
   <input type="hidden" value="<?php echo $fila["Pr3"];?>" id="Pr3"/>
   <input type="hidden" value="<?php echo $fila["Pr4"];?>" id="Pr4"/>
   <div id="Opciones">
-    <button type="button" class="btn btn-primary btn-lg btn-block" style="margin-bottom:4px;white-space: normal;" id="o1" onclick="mostrarResultados()">
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="margin-bottom:4px;white-space: normal;" id="o1" onclick="mostrarResultados(1)">
     </button>
-    <button type="button" class="btn btn-primary btn-lg btn-block" style="margin-bottom:4px;white-space: normal;" id="o2" onclick="mostrarResultados()">
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="margin-bottom:4px;white-space: normal;" id="o2" onclick="mostrarResultados(2)">
     </button>
-    <button type="button" class="btn btn-primary btn-lg btn-block" style="margin-bottom:4px;white-space: normal;" id="o3" onclick="mostrarResultados()">
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="margin-bottom:4px;white-space: normal;" id="o3" onclick="mostrarResultados(3)">
     </button>
   </div>
 
